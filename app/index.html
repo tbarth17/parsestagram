@@ -23,6 +23,20 @@
   </head>
   <body>
 
+        <script type='text/template' data-template-name='login-signup-template'>
+          <h2>Log In</h2>
+            <label name="email">Email:</label>
+            <input name="email" type="text" class="email" placeholder="email">
+            <label name="password">Password:</label>
+            <input name="password" type="password" class="password" placeholder="password">
+            <input type="submit" value="login">
+          <h2>Sign Up</h2>
+            <label name="email">Email:</label>
+            <input type="email" class="email" placeholder="email">
+            <input type="password" class="password" placeholder="password">
+            <input class="submit" type="submit" value="create account">
+        </script>
+
         <script type="text/template" data-template-name="posts/create">
         <form>
           <input type="text" placeholder="Title" class="title">
@@ -34,7 +48,7 @@
           <img style="width: 200px;" src="<%= model.image %>">
         <% } %>
         </script>
-        
+
         <script type="text/template" data-template-name="posts/index">
           <ul>
             <% _.each(posts, function(post){ %>
